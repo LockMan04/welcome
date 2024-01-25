@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="logo">
-        <h3 class="nameLogo">ThanhToan.</h3>
+        <h3 class="nameLogo" onclick="goLink('./index.html')">ThanhToan.</h3>
         <div>&#9655;</div>
       </div>
       <nav>
         <ul>
+          <li><a href="#">Trang chủ</a></li>
           <li><a href="infor.html">Thông tin</a></li>
-          <li><a href="#">Liên hệ</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
         </ul>
         <div class="menu-btn">
           <i class="fas fa-bars"></i>
@@ -26,8 +27,9 @@
         <div class="navigation hidden">
           <h3 class="nameLogo">ThanhToan.</h3>
           <ul>
+            <li><a href="#">Trang chủ</a></li>
             <li><a href="infor.html">Thông tin</a></li>
-            <li><a href="#">Liên hệ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
           </ul>
           <div class="close-btn">
             <i class="fas fa-times"></i>
@@ -46,31 +48,40 @@
           Tuệ Nhân Tạo.
         </h2>
         <p>
-          Đây là một trang web "Lỏ" để tự giới hiệu về mình. Rất vui khi được biết bạn <3
+          Đây là một trang web "Lỏ" để tự giới thiệu về mình. Rất vui khi được
+          biết bạn <3
         </p>
         <div class="contact">
           Liên hệ với mình qua:
           <div class="social-media">
-            <a href="https://www.facebook.com/lt.toan207" style="color: #4267b2"
+            <a href="https://www.facebook.com/lt.toan207" style="color: #4267b2" target="_blank"
               ><i class="fab fa-facebook"></i
             ></a>
             <a
-              href="https://www.instagram.com/lt.toan207_/"
+              href="https://www.instagram.com/lt.toan207_/" target="_blank"
               style="color: #e1306c"
               ><i class="fab fa-instagram"></i
             ></a>
             <a
-              href="https://discord.com/channels/@me/482418925288816650"
+              href="https://discord.com/channels/@me/482418925288816650" target="_blank"
               style="color: #5865f2"
               ><i class="fa-brands fa-discord"></i
             ></a>
           </div>
         </div>
         <div class="button">
-          <button type="button" class="btn btn-main" onclick="goLink('https://www.facebook.com/messages/t/100020770600992/')">
+          <button
+            type="button"
+            class="btn btn-main"
+            onclick="goLink('https://www.facebook.com/messages/t/100020770600992/')"
+          >
             <i class="fa-regular fa-message"></i> Nhắn tin?
           </button>
-          <button type="button" class="btn" onclick="goLink('https://github.com/LockMan04?tab=repositories')">
+          <button
+            type="button"
+            class="btn"
+            onclick="goLink('https://github.com/LockMan04?tab=repositories')"
+          >
             <i class="fa-brands fa-buromobelexperte"></i> Xem thêm đồ án
           </button>
         </div>
@@ -88,5 +99,3 @@
   ></script>
   <script src="app.js"></script>
 </html>
-<!-- https://www.facebook.com/messages/t/100020770600992/ -->
-<!-- https://github.com/LockMan04?tab=repositories -->
