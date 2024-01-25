@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tester</title>
+    <title>Trang chủ</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,30 +12,27 @@
     <header>
       <div class="logo">
         <h3 class="nameLogo">ThanhToan.</h3>
+        <div>&#9655;</div>
       </div>
       <nav>
         <ul>
-          <li><a href="#">Thông tin</a></li>
+          <li><a href="infor.html">Thông tin</a></li>
           <li><a href="#">Liên hệ</a></li>
         </ul>
-        <label for="navigation" class="menu-btn">
+        <div class="menu-btn">
           <i class="fas fa-bars"></i>
-        </label>
-
-        <label class="overlay" for="navigation"></label>
-
-        <label class="navigation" for="navigation" hidden>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="navigation hidden">
           <h3 class="nameLogo">ThanhToan.</h3>
           <ul>
-            <li><a href="#">Thông tin</a></li>
+            <li><a href="infor.html">Thông tin</a></li>
             <li><a href="#">Liên hệ</a></li>
           </ul>
-          <label class="close-btn" for="navigation">
+          <div class="close-btn">
             <i class="fas fa-times"></i>
-          </label>
-        </label>
-        
-        <input type="checkbox" id="navigation" class="nav-input" />
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -48,12 +46,10 @@
           Tuệ Nhân Tạo.
         </h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
-          consequuntur totam beatae quod nesciunt neque mollitia, quasi ad minus
-          veritatis.
+          Đây là một trang web "Lỏ" để tự giới hiệu về mình. Rất vui khi được biết bạn <3
         </p>
         <div class="contact">
-          Contact me:
+          Liên hệ với mình qua:
           <div class="social-media">
             <a href="https://www.facebook.com/lt.toan207" style="color: #4267b2"
               ><i class="fab fa-facebook"></i
@@ -71,16 +67,18 @@
           </div>
         </div>
         <div class="button">
-          <button type="button" class="btn btn-main">
-            <i class="fa-regular fa-message"></i> Chat With Me?
+          <button type="button" class="btn btn-main" onclick="goLink('https://www.facebook.com/messages/t/100020770600992/')">
+            <i class="fa-regular fa-message"></i> Nhắn tin?
           </button>
-          <button type="button" class="btn">
+          <button type="button" class="btn" onclick="goLink('https://github.com/LockMan04?tab=repositories')">
             <i class="fa-brands fa-buromobelexperte"></i> Xem thêm đồ án
           </button>
         </div>
       </div>
       <div class="container-img">
         <img src="11zon_cropped.png" alt="img" />
+        <div id="circle1"></div>
+        <div id="circle2"></div>
       </div>
     </div>
   </body>
@@ -88,6 +86,7 @@
     src="https://kit.fontawesome.com/ef0d708eb7.js"
     crossorigin="anonymous"
   ></script>
+  <script src="app.js"></script>
 </html>
 <!-- https://www.facebook.com/messages/t/100020770600992/ -->
 <!-- https://github.com/LockMan04?tab=repositories -->
