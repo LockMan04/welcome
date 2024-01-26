@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Công cụ</title>
+    <link rel="stylesheet" href="/asset/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h3 class="nameLogo" onclick="goLink('/index.html')">ThanhToan.</h3>
+        <div>&#9655;</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Trang chủ</a></li>
+          <li><a href="./infor.html">Thông tin</a></li>
+          <li><a href="#">Công cụ</a></li>
+          <li><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="navigation hidden">
+          <h3 class="nameLogo">ThanhToan.</h3>
+          <ul>
+            <li><a href="/index.html">Trang chủ</a></li>
+            <li><a href="./infor.html">Thông tin</a></li>
+            <li><a href="#">Công cụ</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+          </ul>
+          <div class="close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="sidebar">
+      <div class="btn-bars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="nav_list">
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-chrome"></i>
+            <span class="list_name">Extension Chrome</span>
+          </a>
+          <span class="tooltip">Extension Chrome</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-cubes"></i>
+            <span class="list_name">Extension VS Code</span>
+          </a>
+          <span class="tooltip">Extension VS Code</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-compact-disc"></i>
+            <span class="list_name">Best Application</span>
+          </a>
+          <span class="tooltip">Best Application</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span class="list_name">Pro Tips</span>
+          </a>
+          <span class="tooltip">Pro Tips</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-palette"></i>
+            <span class="list_name">Color</span>
+          </a>
+          <span class="tooltip">Color</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-cog"></i>
+            <span class="list_name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+      </ul>
+    </div>
+
+    <h3 id="test" style="margin: 20px;">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias voluptates
+      molestias iure! Sunt, nesciunt vitae aperiam mollitia ullam beatae cum!
+    </h3>
+  </body>
+  <script>
+    const sidebar = document.querySelector(".sidebar");
+    const btnbars = document.querySelector(".btn-bars");
+
+    btnbars.addEventListener("click", () => {
+      sidebar.classList.toggle("show-sidebar");
+    });
+  </script>
+  <script
+    src="https://kit.fontawesome.com/ef0d708eb7.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

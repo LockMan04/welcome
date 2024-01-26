@@ -11,6 +11,7 @@
   --color: #934da3d2;
   --black: #000;
   --white: #fff;
+  --red: #ff0000;
 }
 
 html,
@@ -369,5 +370,124 @@ nav > ul > li > a:hover {
 }
 
 .counting > p > span {
-  color: red;
+  color: var(--red);
+}
+
+/* SideBar */
+.sidebar{
+  padding-top: 65px;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 25px;
+  width: 75px;
+  height: 100%;
+  z-index: 3;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3) inset;
+}
+
+.sidebar .btn-bars {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar ul li {
+  position: relative;
+  height: 55px;
+  width: 100%;
+  list-style: none;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+.sidebar ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(----black);
+  transition: 0.1s ease-in-out;
+}
+
+.sidebar ul li i {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  border-radius: 10px 0 0 10px;
+  font-weight: 700;
+  box-shadow: 5px 0 8px rgba(0, 0, 0, 0.3) inset;
+}
+
+.tooltip {
+  position: absolute;
+  top: 28px;
+  left: 50px;
+  transform: translate(0, -50%);
+  border-radius: 6px;
+  background: var(--white);
+  opacity: 0;
+  height: 35px;
+  width: max-content;
+  line-height: 35px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 0 10px;
+  pointer-events: none;
+}
+
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.sidebar.show-sidebar {
+  width: 240px;
+}
+
+.sidebar.show-sidebar .btn-bars {
+  right: 20px;
+}
+
+.sidebar .list_name{
+  position: absolute;
+  bottom: 2px;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.sidebar.show-sidebar .list_name{
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1.5s ease-in-out;
+}
+
+.sidebar.show-sidebar ul li .tooltip {
+  display: none;
+}
+
+.sidebar.show-sidebar ~ #test {
+  padding-left: 240px;
+  transition: .5s ease-in-out;
+}
+
+#test {
+  padding: 65px 0 0 75px;
+  transition: .5s ease-in-out;
+
 }
