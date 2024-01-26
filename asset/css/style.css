@@ -436,7 +436,7 @@ nav > ul > li > a:hover {
 .tooltip {
   position: absolute;
   top: 28px;
-  left: 50px;
+  left: 55px;
   transform: translate(0, -50%);
   border-radius: 6px;
   background: var(--white);
