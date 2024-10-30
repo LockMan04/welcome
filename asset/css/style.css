@@ -85,6 +85,7 @@ nav > ul > li > a:hover {
   margin-right: auto;
   display: block;
   z-index: 0;
+  pointer-events: none;
 }
 
 .btn {
@@ -518,4 +519,33 @@ nav > ul > li > a:hover {
   rotate: 180deg;
 }
 
+.ghost-container {
+  position: relative;
+  transform-origin: 0 0;
+  animation: orbit 10s linear infinite;
+  /* height: 100%; */
+  /* width: 100%; */
+}
 
+.ghost {
+  background-image: url('/asset/img/♣\ pixosprout\ ♣.gif');
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  z-index: 1000;
+  position: absolute;
+  /* top: 20px; */
+  /* left: 20px; */
+  animation: orbit 10s linear infinite reverse;
+}
+
+@keyframes orbit {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
