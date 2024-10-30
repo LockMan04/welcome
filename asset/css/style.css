@@ -491,3 +491,31 @@ nav > ul > li > a:hover {
   transition: .5s ease-in-out;
 
 }
+
+/* Extentions */
+.spider_web {
+  position: fixed;
+  width: 100vw;
+  max-width: 220px;
+  height: 25vh;
+  z-index: 1000;
+  background-image: url('/asset/img/spiderweb.png');
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  filter: drop-shadow(#000 1px 1px 0px) opacity(40%);
+  pointer-events: none;
+}
+
+.spider_web__top__left {
+  top: 0;
+  left: 0;
+}
+
+.spider_web__bottom__right {
+  bottom: 0;
+  right: 0;
+  rotate: 180deg;
+}
+
+
