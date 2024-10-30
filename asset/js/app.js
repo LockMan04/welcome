@@ -53,13 +53,33 @@ contactElement.forEach((element, index) => {
 const ghost = document.querySelector(".ghost");
 
 window.addEventListener("mousemove", function (e) {
-  const posX = e.clientX / 10;
-  const posY = e.clientY / 10;
+  const posX = e.clientX;
+  const posY = e.clientY;
 
   ghost.style.left = posX + "px";
   ghost.style.top = posY + "px";
+});
 
-  console.log(posX, posY);
 
+function getRandomPosition() {
+  const angle = Math.random() * 2 * Math.PI;
+  const radius = Math.random() * 100 + 30; 
+  const x = Math.cos(angle) * radius;
+  const y = Math.sin(angle) * radius;
+  return { x, y };
+}
+
+function moveFlyingObject() {
+  const { x, y } = getRandomPosition();
+  ghost.style.transform = `translate(${x}px, ${y}px)`;
+}
+
+setInterval(moveFlyingObject, 2000);
+
+const pumpkin = document.querySelector(".pumpkin");
+
+pumpkin.addEventListener("click", function () {
+  window.alert('🎃 Happy Halloween 🎃');
+  window.alert('Lười làm thêm hiệu ứng quá...');
 });
 

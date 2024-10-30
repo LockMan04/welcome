@@ -215,7 +215,6 @@ nav > ul > li > a:hover {
   .contact-area p {
     font-size: 20px !important;
   }
-
 }
 
 /* Responsive Tablet */
@@ -324,7 +323,7 @@ nav > ul > li > a:hover {
   padding: 74px 50px;
   width: 100%;
   height: 100%;
-  line-height: 1; 
+  line-height: 1;
 }
 
 .contact-page a {
@@ -346,7 +345,8 @@ nav > ul > li > a:hover {
   padding: 46px 0 0 5px;
 }
 
-.contact-area, .contact-other {
+.contact-area,
+.contact-other {
   display: flex;
   flex-direction: column;
 }
@@ -375,11 +375,11 @@ nav > ul > li > a:hover {
 }
 
 /* SideBar */
-.sidebar{
+.sidebar {
   padding-top: 65px;
 }
 
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -464,7 +464,7 @@ nav > ul > li > a:hover {
   right: 20px;
 }
 
-.sidebar .list_name{
+.sidebar .list_name {
   position: absolute;
   bottom: 2px;
   opacity: 0;
@@ -472,7 +472,7 @@ nav > ul > li > a:hover {
   pointer-events: none;
 }
 
-.sidebar.show-sidebar .list_name{
+.sidebar.show-sidebar .list_name {
   opacity: 1;
   pointer-events: auto;
   transition: 1.5s ease-in-out;
@@ -484,13 +484,12 @@ nav > ul > li > a:hover {
 
 .sidebar.show-sidebar ~ #test {
   padding-left: 240px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #test {
   padding: 65px 0 0 75px;
-  transition: .5s ease-in-out;
-
+  transition: 0.5s ease-in-out;
 }
 
 /* Extentions */
@@ -500,7 +499,7 @@ nav > ul > li > a:hover {
   max-width: 220px;
   height: 25vh;
   z-index: 1000;
-  background-image: url('/asset/img/spiderweb.png');
+  background-image: url("/asset/img/spiderweb.png");
   background-size: 100% 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -519,16 +518,8 @@ nav > ul > li > a:hover {
   rotate: 180deg;
 }
 
-.ghost-container {
-  position: relative;
-  transform-origin: 0 0;
-  animation: orbit 10s linear infinite;
-  /* height: 100%; */
-  /* width: 100%; */
-}
-
 .ghost {
-  background-image: url('/asset/img/♣\ pixosprout\ ♣.gif');
+  background-image: url("/asset/img/♣\ pixosprout\ ♣.gif");
   background-size: 100% 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -536,16 +527,22 @@ nav > ul > li > a:hover {
   height: 70px;
   z-index: 1000;
   position: absolute;
-  /* top: 20px; */
-  /* left: 20px; */
-  animation: orbit 10s linear infinite reverse;
+  pointer-events: none;
+  transition: transform 4s ease-in-out;
+  opacity: 0.6;
 }
 
-@keyframes orbit {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
+.pumpkin {
+  background-image: url("/asset/img/pumpkin.png");
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  z-index: 999;
+  cursor: pointer;
+  position: fixed;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
 }
